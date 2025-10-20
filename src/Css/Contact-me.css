@@ -2,20 +2,50 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 30px;
-  border: 1px solid crimson;
-  border-radius: 8px;
+  border: 2px solid crimson;
+  border-radius: 12px;
   font-family: Arial, sans-serif;
   margin-top: 10%;
+  background-color: rgba(240, 248, 255, 0.02);
+  min-height: 60vh;
 }
 
-.contact-details p,
-.social-links ul {
-  margin: 10px 0;
+.contact-page > p {
+  color: aliceblue;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-details {
+  margin: 2rem 0;
+}
+
+.contact-details p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links h3 {
+  color: crimson;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .social-links ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bolder;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-links li {
@@ -23,32 +53,69 @@
 }
 
 a {
-  color:aliceblue;
+  color: aliceblue;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-ul{
-    display: flex;
-  width: 100%;
-  justify-content: center;
-  column-gap: 20px;
-  font-weight: bolder;
-  align-items: center;
   color: crimson;
+  text-decoration: underline;
 }
 
 .email{
-    color: crimson;
+  color: crimson;
+  text-align: center;
 }
+
 .number{
-    color: crimson;
+  color: crimson;
+  text-align: center;
 }
+
 .title{
-    color: crimson;
+  color: crimson;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
-a href{
-    color: aliceblue;
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contact-page {
+    margin: 30px auto;
+    margin-top: 20%;
+    padding: 25px 20px;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+
+  .social-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 20px 15px;
+    margin-top: 25%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .contact-details p {
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
 }

@@ -2,25 +2,19 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  column-gap: 50px;
-  row-gap: 50px;
-  position: fixed;
+  padding: 120px 2rem 4rem 2rem;
+  gap: 3rem;
 }
-
 
 .resume-container {
   display: flex;
-  flex-direction: row;
-  flex-basis: 100px;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
-  justify-items: center;
-  align-content: space-evenly;
- ;
+  max-width: 1400px;
+  gap: 3rem;
 }
 
 .resume-title {
@@ -28,45 +22,91 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
+
+.resume-title h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 .resume-content {
   display: flex;
   flex-direction: row;
-  column-gap: 50;
+  gap: 2rem;
   width: 100%;
-  height: 50vh;
   justify-content: space-between;
-  align-content: space-evenly;
- padding: 0 20px;
-
-  justify-items: center;
+  padding: 0 1rem;
 }
 
-.resume-content2 {
- display:flex
-}
-.resume1 {
-  width: 20%;
-}
-.resume2 {
-  width: 25%;
-}
-.resume3 {
-  width: 25%;
+.resume1, .resume2, .resume3, .resume4 {
+  flex: 1;
+  min-width: 250px;
+  background-color: rgba(240, 248, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid rgba(220, 20, 60, 0.3);
 }
 
-.resume4 {
-  width: 25%;
-}
-h1 {
-  color: aliceblue;
-}
-h2 {
+.resume1 h2, .resume2 h2, .resume3 h2, .resume4 h2 {
   color: crimson;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
-p {
+
+.resume1 p, .resume2 p, .resume3 p, .resume4 p {
   color: aliceblue;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
-li {
+
+.resume1 li, .resume2 li, .resume3 li, .resume4 li {
   color: aliceblue;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  .resume-content {
+    flex-direction: column;
+  }
+
+  .resume1, .resume2, .resume3, .resume4 {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-main-container {
+    padding: 100px 1rem 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .resume-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .resume-content {
+    padding: 0;
+  }
+
+  .resume1, .resume2, .resume3, .resume4 {
+    padding: 1.5rem;
+  }
+
+  .resume1 h2, .resume2 h2, .resume3 h2, .resume4 h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .resume1, .resume2, .resume3, .resume4 {
+    padding: 1rem;
+  }
 }
