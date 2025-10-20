@@ -1,0 +1,54 @@
+.contact-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid crimson;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  margin-top: 10%;
+}
+
+.contact-details p,
+.social-links ul {
+  margin: 10px 0;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 5px 0;
+}
+
+a {
+  color:aliceblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+ul{
+    display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 20px;
+  font-weight: bolder;
+  align-items: center;
+  color: crimson;
+}
+
+.email{
+    color: crimson;
+}
+.number{
+    color: crimson;
+}
+.title{
+    color: crimson;
+}
+a href{
+    color: aliceblue;
+}

@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+  height: 8vh;
+  gap: 30px;
+  align-items: center;
+  width: 300px;
+}
+
+.button {
+  color: aliceblue;
+  background-color: crimson;
+}

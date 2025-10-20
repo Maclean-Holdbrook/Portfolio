@@ -1,0 +1,47 @@
+.about-section {
+  /* Remove fixed positioning to allow normal page flow */
+  padding: 100px 2rem 2rem; /* Add top padding to clear the fixed navbar */
+  max-width: 900px;
+  margin: 0 auto; /* Center the section */
+  color: aliceblue;
+}
+
+.about-header h1 {
+  font-style: italic;
+  font-size: xx-large;
+  font-weight: 800;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-content h2 {
+  color: crimson;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p,
+.about-content ul {
+  font-size: large;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.about-content ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+  .about-section {
+    padding-top: 120px; /* More space for navbar on smaller screens */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

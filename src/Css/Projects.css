@@ -1,0 +1,119 @@
+.projects-container {
+  min-height: 100vh;
+  padding: 7rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: aliceblue;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.project-card {
+  background-color: rgba(240, 248, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(220, 20, 60, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.3);
+}
+
+.project-image-wrapper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 2rem;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: crimson;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: aliceblue;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-link-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: crimson;
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.project-link-button:hover {
+  background-color: #b22222;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.4);
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 3rem 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-image-wrapper {
+    height: 250px;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+}

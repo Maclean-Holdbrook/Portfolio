@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)",
+      "Bash(cat \"C:\\Users\\ebene\\Desktop\\portfolio\\src\\Pages\\Projects.jsx\")",
+      "Bash(cat \"C:\\Users\\ebene\\Desktop\\portfolio\\src\\Css\\Projects.css\")",
+      "Read(//c/Users/ebene/Pictures/Screenshots/**)",
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/Maclean-Holdbrook/Portfolio.git)",
+      "Bash(git add .)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
