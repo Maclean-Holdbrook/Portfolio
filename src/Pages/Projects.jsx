@@ -1,11 +1,13 @@
 import "../Css/Projects.css";
 import screenshot1 from "../Images/Screenshot 2025-10-20 154712.png";
 import screenshot2 from "../Images/Screenshot 2025-10-20 154807.png";
+import screenshot3 from "../Images/Screenshot 2025-10-31 142205.png";
 
 function Projects() {
   // Add your website links here
   const project1Link = "https://hood-car-rentals.vercel.app"; // Add Car Rental Website link here
   const project2Link = "https://hood-shop.vercel.app"; // Add E-commerce Store link here
+  const project3Link = "https://leave-application-murex.vercel.app"; // Leave Application System
 
   return (
     <div className="projects-container">
@@ -53,6 +55,31 @@ function Projects() {
             </p>
             <a
               href={project2Link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link-button"
+            >
+              View Website
+            </a>
+          </div>
+        </div>
+
+        {/* Project 3 - Leave Application System */}
+        <div className="project-card">
+          <div className="project-image-wrapper">
+            <img
+              src={screenshot3}
+              alt="Leave Application System"
+              className="project-image"
+            />
+          </div>
+          <div className="project-info">
+            <h2 className="project-name">Leave Application System</h2>
+            <p className="project-description">
+              A comprehensive leave management system for tracking and managing employee leave requests.
+            </p>
+            <a
+              href={project3Link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link-button"
