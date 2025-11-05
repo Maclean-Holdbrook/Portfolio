@@ -2,12 +2,14 @@ import "../Css/Projects.css";
 import screenshot1 from "../Images/Screenshot 2025-10-20 154712.png";
 import screenshot2 from "../Images/Screenshot 2025-10-20 154807.png";
 import screenshot3 from "../Images/Screenshot 2025-10-31 142205.png";
+import screenshot4 from "../Images/Screenshot 2025-11-05 144453.png";
 
 function Projects() {
   // Add your website links here
   const project1Link = "https://hood-car-rentals.vercel.app"; // Add Car Rental Website link here
   const project2Link = "https://hood-shop.vercel.app"; // Add E-commerce Store link here
   const project3Link = "https://leave-application-murex.vercel.app"; // Leave Application System
+  const project4Link = "https://hood-eatery.vercel.app"; // Hood Eatery
 
   return (
     <div className="projects-container">
@@ -80,6 +82,31 @@ function Projects() {
             </p>
             <a
               href={project3Link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link-button"
+            >
+              View Website
+            </a>
+          </div>
+        </div>
+
+        {/* Project 4 - Hood Eatery */}
+        <div className="project-card">
+          <div className="project-image-wrapper">
+            <img
+              src={screenshot4}
+              alt="Hood Eatery Restaurant"
+              className="project-image"
+            />
+          </div>
+          <div className="project-info">
+            <h2 className="project-name">Hood Eatery</h2>
+            <p className="project-description">
+              A restaurant website featuring menu offerings, online ordering, and reservation system.
+            </p>
+            <a
+              href={project4Link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link-button"
