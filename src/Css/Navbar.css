@@ -32,15 +32,15 @@
   align-items: center;
   list-style: none;
 }
+
 .home {
   color: aliceblue;
 }
+
 .service {
   color: aliceblue;
 }
-.project {
-  color: aliceblue;
-}
+
 .about {
   color: aliceblue;
   background-color: crimson;
@@ -83,15 +83,19 @@
   .navbar ul {
     flex-direction: column;
     position: fixed;
-    top: 70px;
+    top: 76px;
+    /* Adjusted to match navbar height */
     right: -100%;
-    background-color: rgba(0, 0, 0, 0.98);
+    background-color: rgb(0, 0, 0);
+    /* Solid black for better readability */
     width: 100%;
+    height: calc(100vh - 76px);
+    /* Full height minus navbar */
     text-align: center;
     transition: right 0.3s ease;
     padding: 2rem 0;
-    gap: 1.5rem;
-    border-top: 2px solid crimson;
+    gap: 2rem;
+    border-top: 1px solid #333;
   }
 
   .navbar ul.active {
@@ -102,7 +106,8 @@
     width: 100%;
   }
 
-  .home, .service, .project {
+  .home,
+  .service {
     display: block;
     padding: 0.75rem 1rem;
     width: 100%;

@@ -8,6 +8,7 @@
   padding: 2rem;
   padding-top: 120px;
 }
+
 .hero-content {
   display: flex;
   justify-content: space-between;
@@ -16,15 +17,19 @@
   max-width: 1200px;
   width: 100%;
 }
+
 .home {
   color: aliceblue;
 }
+
 .service {
   color: aliceblue;
 }
+
 .project {
   color: aliceblue;
 }
+
 .about {
   color: aliceblue;
   background-color: crimson;
@@ -67,14 +72,17 @@
   bottom: 0%;
   width: 100%;
 }
+
 .foot {
   background-color: crimson;
   color: aliceblue;
   padding: 10px;
 }
+
 .body {
   background-color: black;
 }
+
 .name {
   font-size: 3rem;
   font-weight: 700;
@@ -88,12 +96,14 @@
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
+
 .lead {
   color: aliceblue;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
+
 .buttons {
   display: flex;
   gap: 1rem;
@@ -104,6 +114,7 @@
   color: aliceblue;
   background-color: crimson;
 }
+
 button {
   background-color: crimson;
   color: aliceblue;
@@ -123,25 +134,46 @@ button:hover {
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 90px;
+    padding-top: 80px;
+    /* Reduced from 90px */
+    padding-bottom: 2rem;
+    height: auto;
+    /* Allow content to dictate height */
+    min-height: 100vh;
   }
 
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    /* Put image on top if desired, or column for image below */
+    gap: 2rem;
+  }
+
+  /* Note: Original had image with order: -1 (top). 
+     Reference: .hero-content { flex-direction: column; ... } .image { ... order: -1; } 
+     I will keep the image on top.
+  */
+
+  .content {
     text-align: center;
+    padding: 0 1rem;
   }
 
   .image {
-    width: 300px;
-    height: 300px;
-    order: -1;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .occupation {
     font-size: 1.2rem;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

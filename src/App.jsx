@@ -1,7 +1,7 @@
 import './App.css'
 import Home from "./Pages/Home"
 import Service from './Pages/Service'
-import Projects from "./Pages/Projects"
+
 import About from "./Pages/About"
 import Hire from "./Pages/Contact-me"
 import Resume from "./Pages/Resume"
@@ -24,10 +24,7 @@ const router = createBrowserRouter(
           path:"service",
           element:<Service />
         },
-        {
-          path:"projects",
-          element:<Projects />
-        },
+
          {
           path:"about",
           element:<About />

@@ -1,9 +1,8 @@
-.service-title{
+.service-title {
     display: flex;
-    height: 5vh;
     justify-content: center;
-    margin-top: 8%;
-    padding: 0 1rem;
+    padding: 120px 1rem 0;
+    /* Add top padding to clear navbar */
 }
 
 .service-title h2 {
@@ -12,28 +11,22 @@
     font-weight: 700;
 }
 
-.service-container{
+.service-container,
+.service-container1 {
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 2rem;
     justify-content: center;
     gap: 2rem;
     padding: 0 2rem;
     flex-wrap: wrap;
 }
 
-.service-container1{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 5%;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 2rem;
-    flex-wrap: wrap;
-}
-
-.service1, .service2, .service3, .service4, .service5 {
+.service1,
+.service2,
+.service3,
+.service4,
+.service5 {
     flex: 1;
     min-width: 280px;
     max-width: 400px;
@@ -44,12 +37,20 @@
     color: aliceblue;
 }
 
-.service1 h2, .service2 h2, .service3 h2, .service4 h2, .service5 h2 {
+.service1 h2,
+.service2 h2,
+.service3 h2,
+.service4 h2,
+.service5 h2 {
     color: crimson;
     margin-bottom: 1rem;
 }
 
-.service1 ol, .service2 ol, .service3 ol, .service4 ol, .service5 ol {
+.service1 ol,
+.service2 ol,
+.service3 ol,
+.service4 ol,
+.service5 ol {
     color: aliceblue;
     line-height: 1.8;
 }
@@ -57,7 +58,8 @@
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     .service-title {
-        margin-top: 15%;
+        padding-top: 100px;
+        /* Slightly less on mobile if needed */
         height: auto;
     }
 
@@ -73,7 +75,11 @@
         gap: 1.5rem;
     }
 
-    .service1, .service2, .service3, .service4, .service5 {
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5 {
         width: 100%;
         max-width: 100%;
         min-width: auto;
@@ -85,7 +91,11 @@
         font-size: 1.5rem;
     }
 
-    .service1, .service2, .service3, .service4, .service5 {
+    .service1,
+    .service2,
+    .service3,
+    .service4,
+    .service5 {
         padding: 1.5rem;
     }
 }

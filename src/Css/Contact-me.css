@@ -1,16 +1,17 @@
 .contact-page {
   max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 120px 30px 30px;
+  /* Top padding clears navbar */
   border: 2px solid crimson;
   border-radius: 12px;
   font-family: Arial, sans-serif;
-  margin-top: 10%;
   background-color: rgba(240, 248, 255, 0.02);
-  min-height: 60vh;
+  min-height: calc(100vh - 100px);
+  /* Adjust height */
 }
 
-.contact-page > p {
+.contact-page>p {
   color: aliceblue;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -63,17 +64,17 @@ a:hover {
   text-decoration: underline;
 }
 
-.email{
+.email {
   color: crimson;
   text-align: center;
 }
 
-.number{
+.number {
   color: crimson;
   text-align: center;
 }
 
-.title{
+.title {
   color: crimson;
   text-align: center;
   font-size: 2.5rem;

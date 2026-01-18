@@ -8,7 +8,14 @@
       "Read(//c/Users/ebene/Pictures/Screenshots/**)",
       "Bash(git init)",
       "Bash(git remote add origin https://github.com/Maclean-Holdbrook/Portfolio.git)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial portfolio setup with homepage and projects page\n\n- Added profile picture to homepage with circular styling\n- Redesigned homepage layout with content on left and image on right\n- Created projects page displaying Car Rental and E-commerce projects\n- Added navbar with fixed positioning and solid background\n- Implemented responsive design for mobile devices\n- Configured routing for all portfolio pages\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push -u origin master)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm start)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []

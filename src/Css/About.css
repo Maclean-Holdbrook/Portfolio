@@ -1,8 +1,10 @@
 .about-section {
   /* Remove fixed positioning to allow normal page flow */
-  padding: 100px 2rem 2rem; /* Add top padding to clear the fixed navbar */
+  padding: 100px 2rem 2rem;
+  /* Add top padding to clear the fixed navbar */
   max-width: 900px;
-  margin: 0 auto; /* Center the section */
+  margin: 0 auto;
+  /* Center the section */
   color: aliceblue;
 }
 
@@ -40,7 +42,8 @@
 /* --- Responsiveness --- */
 @media (max-width: 768px) {
   .about-section {
-    padding-top: 120px; /* More space for navbar on smaller screens */
+    padding-top: 120px;
+    /* Consistent with other pages */
     padding-left: 1rem;
     padding-right: 1rem;
   }
