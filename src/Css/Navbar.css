@@ -96,6 +96,8 @@
     padding: 2rem 0;
     gap: 2rem;
     border-top: 1px solid #333;
+    justify-content: flex-start;
+    /* Align items to top */
   }
 
   .navbar ul.active {
