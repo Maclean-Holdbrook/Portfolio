@@ -1,0 +1,127 @@
+.projects-section {
+    padding: 100px 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.projects-header h1 {
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 800;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(220, 20, 60, 0.2);
+    border-color: crimson;
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h2 {
+    color: crimson;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.project-link {
+    margin-top: auto;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #a01040;
+}
+
+.credentials-note {
+    background: rgba(220, 20, 60, 0.1);
+    border-left: 3px solid crimson;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.credentials-note p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.3rem !important;
+    color: #eee !important;
+    font-family: monospace;
+}
+
+.credentials-note strong {
+    color: crimson;
+    font-size: 0.9rem;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .projects-section {
+        padding-top: 120px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
